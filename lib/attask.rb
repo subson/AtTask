@@ -32,22 +32,5 @@ module Attask
     def client(subdomain, username, password, options = {})
       Attask::Base.new(subdomain, username, password, options)
     end
-
-    def get_all_tasks(options)
-      attask = self.client("rgenerator","engapi@rgnrtr.com","M@k3itrain!")
-      all_tasks = attask.task.search("/search", options)
-      all_tasks
-    end
-
-    def get_all_issues(options)
-      attask = self.client("rgenerator","engapi@rgnrtr.com","M@k3itrain!")
-      all_issues = attask.issue.search("/search", options)
-      all_issues
-    end
-
-    def get_user_id(username, options)
-      user
-    end
-
   end
 end

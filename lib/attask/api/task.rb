@@ -29,13 +29,6 @@ module Attask
         output["data"]["fields"].delete("auditUserIDs")
         output
       end
-
-      def search(path,options)
-        response = request(:get, credentials, api_model.api_path + path, options)
-        json = response.parsed_response["data"]
-        json
-      end
-
     end
   end
 end

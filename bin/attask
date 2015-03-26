@@ -9,13 +9,3 @@ require 'chronic'
 require 'date'
 require "./lib/attask.rb"
 require 'cgi'
-
-
-
-options = {}
-# need to add one more key with status = "ROP" to this hash
-options[:query] = {:"assignedTo:firstName" => "Skye", :status => ["NEW", "ROP"],  :fields => "ID,name,objCode,description,status", :"$$limit" => 500}
-tasks = Attask.get_all_tasks(options)
-issues = Attask.get_all_issues(options)
-pp tasks
-
