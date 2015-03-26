@@ -21,12 +21,6 @@ module Attask
         fields.join(',')
 
       end
-
-      def findById(project_id)
-        api_path = api_model.api_path << '/' << project_id
-        response = request(:get, credentials, api_path)
-        json = response.parsed_response["data"]
-      end
     end
   end
 end
