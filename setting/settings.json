@@ -8,13 +8,13 @@
         },
         {
             "task": {
-                "fields": "ID,name,objCode,percentComplete,plannedCompletionDate,plannedStartDate,priority,progressStatus,projectedCompletionDate,projectedStartDate,status,taskNumber,wbs,workRequired,description"
+                "fields": "ID,name,objCode,percentComplete,plannedCompletionDate,plannedStartDate,priority,progressStatus,projectedCompletionDate,projectedStartDate,status,taskNumber,wbs,workRequired,description",
                 "customFields": ""
             }
         },
         {
             "issue": {
-                "fields": "ID,name,objCode,status,description,assignedToID,hasDocuments,hasMessages,hasNotes,lastNoteID,opTaskType,numberofChildren,projectID,resolveTaskID,sourceTaskID,sourceObjID,status,teamID,url,"
+                "fields": "ID,name,objCode,status,description,assignedToID,hasDocuments,hasMessages,hasNotes,lastNoteID,opTaskType,numberofChildren,projectID,resolveTaskID,sourceTaskID,sourceObjID,status,teamID,url",
                 "customFields": ""
             }
         }
