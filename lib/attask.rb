@@ -32,5 +32,29 @@ module Attask
     def client(subdomain, username, password, options = {})
       Attask::Base.new(subdomain, username, password, options)
     end
+
+    def get_all_tasks(obj, options, query_options)
+      all_tasks = obj.task.search(options, query_options)
+      all_tasks
+    end
+
+    def get_all_issues(obj, options, query_options)
+      all_issues = obj.issue.search(options, query_options)
+      all_issues
+    end
+
+    def get_team_ids(obj, teamNames)
+      teams = {}
+      all_teams = obj.team.search
+      teamNames.each do |team|
+        all_teams.each do |key, value|
+          if key.name == team
+            teams[key.ID] = key.name
+          end
+        end
+      end
+      teams
+    end
+
   end
 end
